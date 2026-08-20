@@ -51,7 +51,7 @@
 
 ## 🖥️ Application Dashboard
 
-![WellSight AI Dashboard](wellsight-dashboard.jpeg)
+![WellSight AI Dashboard](Rename wellsight-dashboard.png.jpeg to wellsight-dashboard.jpeg)
 
 
 ### Then:

@@ -30,36 +30,27 @@
    
    ---
    
-   ## 🧠 How It Works
-   
-   ```text
-   Webcam
-      ↓
-   Face Detection
-      ↓
-   Face Size Estimation
-      ↓
-   Distance Classification
-      ↓
-   Session & Break Monitoring
-      ↓
-   Wellness Score
-      ↓
-   Real-Time Recommendation
+  ## 🧠 How It Works
 
----
+```text
+Webcam
+   ↓
+Face Detection
+   ↓
+Face Size Estimation
+   ↓
+Distance Classification
+   ↓
+Session & Break Monitoring
+   ↓
+Wellness Score
+   ↓
+Real-Time Recommendation
+
+```
 
 ## 🖥️ Application Dashboard
 
-![WellSight AI Dashboard](Rename wellsight-dashboard.png.jpeg to wellsight-dashboard.jpeg)
+![WellSight AI Dashboard](wellsight-dashboard.jpeg)
 
 
-### Then:
-
-1. Click **Preview**.
-2. Check that your screenshot appears.
-3. If it looks good → **Commit changes**.
-4. Commit message:
-
-```text
-Add application dashboard preview

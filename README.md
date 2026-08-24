@@ -103,5 +103,28 @@ The system provides real-time monitoring of:
 Press **Q** in the Wellness Monitor window to finish the session.
 
 The session information is then stored in the Excel database.
+---
+
+## 📁 Project Structure
+
+```text
+WellSight-AI/
+│
+├── wellness_monitor.py       # Main wellness monitoring application
+├── database.py               # User login and Excel session database
+├── requirements.txt          # Python dependencies
+├── wellsight-dashboard.jpeg  # Application dashboard screenshot
+└── README.md                 # Project documentation
+```
+
+### File Overview
+
+| File | Purpose |
+|---|---|
+| `wellness_monitor.py` | Runs the real-time computer vision wellness monitor |
+| `database.py` | Collects user details and stores session information |
+| `requirements.txt` | Contains the required Python packages |
+| `wellsight-dashboard.jpeg` | Screenshot of the application dashboard |
+| `README.md` | Project documentation |
 
 

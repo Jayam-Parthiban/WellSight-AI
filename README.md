@@ -196,3 +196,25 @@ WellSight AI follows a real-time computer vision pipeline:
 7. **Session Database**  
    User details and completed session information are stored in an Excel database using OpenPyXL.
 
+---
+
+## 🔮 Future Improvements
+
+- 🧍 Advanced posture detection using pose landmarks
+- 👁️ Blink and eye-strain analysis
+- 🪑 More detailed ergonomic assessment
+- 📈 Historical wellness analytics
+- 📊 Interactive wellness reports and visualizations
+- ☁️ Cloud-based session storage
+- 🤖 Personalized wellness recommendations
+
+---
+
+## ⚠️ Limitations
+
+- Face width is used as an approximate indicator of camera distance rather than a direct physical distance measurement.
+- The current system focuses primarily on workspace distance, sitting duration and break intervals.
+- Wellness scoring is an application-defined metric and should not be interpreted as a medical assessment.
+- Performance depends on webcam quality, lighting conditions and face visibility.
+- The current implementation is designed for Windows environments.
+

@@ -127,4 +127,72 @@ WellSight-AI/
 | `wellsight-dashboard.jpeg` | Screenshot of the application dashboard |
 | `README.md` | Project documentation |
 
+---
+
+## 🧠 System Architecture
+
+WellSight AI follows a real-time computer vision pipeline:
+
+```text
+                    Webcam
+                       │
+                       ▼
+                Frame Acquisition
+                       │
+                       ▼
+              MediaPipe Face Detection
+                       │
+                       ▼
+              Face Bounding Box
+                       │
+                       ▼
+             Face Width Estimation
+                       │
+                       ▼
+          Distance Classification
+          ┌────────────┼────────────┐
+          ▼            ▼            ▼
+       Too Far       Optimal     Too Close
+          │            │            │
+          └────────────┼────────────┘
+                       ▼
+              Session Monitoring
+                       │
+              ┌────────┴────────┐
+              ▼                 ▼
+        Sitting Time       Break Timer
+              │                 │
+              └────────┬────────┘
+                       ▼
+                Wellness Score
+                       │
+                       ▼
+          Recommendation Engine
+                       │
+                       ▼
+                Live Dashboard
+```
+
+### Core Processing
+
+1. **Face Detection**  
+   MediaPipe detects the user's face from the webcam stream.
+
+2. **Distance Estimation**  
+   The width of the detected face bounding box is used as a proxy for the user's distance from the camera.
+
+3. **Distance Classification**  
+   The system classifies the user's position as **Too Far**, **Optimal**, or **Too Close**.
+
+4. **Session Monitoring**  
+   The application tracks how long the user remains present and maintains a break countdown.
+
+5. **Wellness Scoring**  
+   The system calculates a real-time wellness score based on distance and break conditions.
+
+6. **Recommendation Engine**  
+   Contextual recommendations are displayed according to the user's current workspace condition.
+
+7. **Session Database**  
+   User details and completed session information are stored in an Excel database using OpenPyXL.
 
